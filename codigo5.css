@@ -1,0 +1,42 @@
+/* Estilos generales */
+
+.uno {
+  font-family: 'Suravaram', serif;
+  border-color: rgb(255, 255, 233);
+  justify-content: center;
+  text-align: center;
+  background-color: orange;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.dos {
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-item img {
+  height: 500px;
+  width: auto;
+  object-fit: contain;
+}
+
+.modal-content.bg-dark {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.titulo {
+
+  font-family: 'Lobster', cursive;
+
+}
+
+#navbar-principal {
+  font-family: 'Suravaram', serif;
+}
+#Contenido-productos{
+font-family: 'Truculenta', sans-serif;
+}

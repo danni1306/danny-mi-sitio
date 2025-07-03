@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CODIGO5/codigo5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta&display=swap" rel="stylesheet">
+
+
+
+
+  </head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CODIGO5/codigo5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Suravaram&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <div class="container-fluid uno">
+        <div class="row">
+            <div>
+                <h1 class="text-black m-3 titulo">MASTER MOTOS</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div id="navbar-principal" class="row">
+        <div class="col-12 align-items-center d-flex justify-content-center uno">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="btn-home" href="#">Home</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">catalogo</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorías
+                                </a>
+                                  <ul class="dropdown-menu text-center">
+  <li><button class="dropdown-item" onclick="filtrarCategoria('todos')">Todos</button></li>
+  <li><button class="dropdown-item" onclick="filtrarCategoria('Exploradoras')">Exploradoras</button></li>
+  <li><button class="dropdown-item" onclick="filtrarCategoria('guantes')">Guantes</button></li>
+  <li><button class="dropdown-item" onclick="filtrarCategoria('chaquetas')">Chaquetas</button></li>
+</ul>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador"/>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- (contenido restante sin cambios) -->
+
+
+    <!-- Contenido principal -->
+    <div id="Contenido-productos" class="row">
+        <!-- Producto de ejemplo -->
+        <div class="col-3 categoria exploradoras">
+            <div class="card" style="width: 100%;">
+                <img src="IMAG/Imagen de WhatsApp 2025-07-02 a las 09.53.22_5c9fc4e8.jpg" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">EXPLORADORA BUHO</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria exploradoras">
+            <div class="card" style="width: 100%;">
+                <img src="IMAG/Imagen de WhatsApp 2025-07-02 a las 09.53.23_21515c4b.jpg" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">EXPLORADORA CALAVERA</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>        <div class="col-3 categoria exploradoras">
+            <div class="card" style="width: 100%;">
+                <img src="IMAG/Imagen de WhatsApp 2025-07-02 a las 09.53.23_280c4132.jpg" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">OJO DEL DIABLO</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria exploradoras">
+            <div class="card" style="width: 100%;">
+                <img src="IMAG/Imagen de WhatsApp 2025-07-02 a las 09.53.23_48a67d07.jpg" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">LLANTA</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria cascos">
+            <div class="card" style="width: 100%;">
+                <img src="CODIGO5/casco.png" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">CASCO</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria chaquetas">
+            <div class="card" style="width: 100%;">
+                <img src="CODIGO5/casco.png" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">CASCO</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria cascos">
+            <div class="card" style="width: 100%;">
+                <img src="CODIGO5/casco.png" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">BTS FOREVER</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria guantes">
+            <div class="card" style="width: 100%;">
+                <img src="CODIGO5/casco.png" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">BTS FOREVER</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-3 categoria chaquetas align-items-center d-flex justify-content-center">
+            <div class="card" style="width: 100%;">
+                <img src="CODIGO5/casco.png" class="card-img-top" alt="Casco agv" onclick="mostrarImagen(this.src)">
+                <div class="card-body">
+                    <h2 class="d-flex justify-content-center mb-4">BTS FOREVER</h2>
+                    <p class="card-text">Descripción del producto.</p>
+                    <p class="text-center text-info">valor: 1000000</p>
+                </div>
+            </div>
+        </div>
+        <!-- Puedes duplicar y cambiar categoría/campos para más productos -->
+    </div>
+    <p id="mensaje-vacio" class="text-center text-danger mt-4" style="display: none;">
+  No hay productos en esta categoría.
+</p>
+
+    <!-- Carrusel -->
+    <div id="Carrusel-principal" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="CODIGO5/casco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="CODIGO5/casco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="CODIGO5/casco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer-principal" class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container-fluid">
+            <div class="row dos">
+                <div class="col-2 align-items-start">
+                    <a href="https://getbootstrap.com/docs/5.3/helpers/icon-link/" class="d-flex align-items-center justify-content-center text-decoration-none text-dark">
+                        <img src="CODIGO5/face.png" alt="Facebook" width="30" height="30" class="me-2">
+                    </a>
+                    <a href="https://www.instagram.com/master___motos?igsh=NnJ1YjI0aGd5M283">
+                        <img src="CODIGO5/instagram.png" alt="Instagram" width="30" height="30" class="me-2">@master___motos
+                    </a>
+                </div>
+            </div>
+            <p class="mb-0">&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script src="../DISENOWEB/CODIGO5/codigo5.js"></script>
+<!-- Modal para mostrar imagen en pantalla completa -->
+<div class="modal fade" id="imagenModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content bg-dark">
+      
+      <!-- Botón de cierre (la “X”) -->
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <!-- Imagen centrada ocupando la pantalla -->
+      <div class="modal-body d-flex justify-content-center align-items-center p-0">
+        <img id="imagenExpandida" src="" class="img-fluid" alt="Imagen ampliada" style="max-height: 100vh;">
+      </div>
+
+    </div>
+  </div>
+</div>
+    <script src="CODIGO5/codigo5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
